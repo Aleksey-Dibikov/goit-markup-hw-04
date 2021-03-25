@@ -139,6 +139,7 @@ img {
   line-height: 1.19;
   color: var(--color-logo);
   text-decoration: none;
+  flex-basis: calc(100% / 12 * 2);
 }
 
 .dark-bg .logo {
@@ -164,6 +165,7 @@ img {
 
 .menu {
   display: inline-flex;
+  flex-basis: calc(100% / 12 * 4);
 }
 
 .menu-item:not(:last-child) {
@@ -173,6 +175,11 @@ img {
 .hero {
   padding-bottom: 200px;
   padding-top: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/img-hero.jpg);
 }
 
 .heading {
@@ -220,6 +227,7 @@ img {
   text-align: center;
   color: var(--title-color);
   margin-bottom: 50px;
+  flex-basis: calc(100% / 12 * 4);
 }
 
 .description {
@@ -227,7 +235,7 @@ img {
 }
 
 .description-item {
-  width: 270px;
+  flex-basis: calc(100% / 12 * 3);
 }
 
 .description .description-item:not(:last-child) {
@@ -254,7 +262,7 @@ img {
 .images-item {
   margin-left: 30px;
   margin-top: 30px;
-
+  width: calc(100% / 12 * 4);
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
@@ -276,6 +284,7 @@ img {
 }
 
 .list-card {
+  width: calc(100% / 12 * 3);
   flex-basis: calc((100% - 4 * 30px) / 4);
   margin-top: 30px;
   margin-left: 30px;
@@ -302,6 +311,11 @@ img {
   color: var(--title-color);
 }
 
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* .studio:hover,
 .studio:focus {
   color: var(--hover-color);
@@ -310,6 +324,19 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer-map {
+  display: inline-block;
+  flex-basis: calc(100% / 12 * 3);
+}
+
+.social-site {
+  padding-top: 12px;
 }
 
 .adres {
@@ -335,6 +362,10 @@ img {
 
 .footer-nav {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.dark-bg .title-heading {
+  --title-color: var(--title-second-color);
 }
 
 /* portfolio */
